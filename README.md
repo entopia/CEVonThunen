@@ -1,6 +1,4 @@
-Sure! Here is a README.md file with the broken-down code explanation for the `vonthunen.cga` script:
 
-```markdown
 # Von Thunen Model in CityEngine
 
 This repository contains a CityEngine CGA rule file (`vonthunen.cga`) that implements a simple model based on Johann Heinrich von Thünen's theory of agricultural land use. This model calculates and visualizes agricultural rent zones based on yield, market price, production cost, and transportation cost.
