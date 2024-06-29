@@ -1,4 +1,3 @@
-
 # Von Thunen Model in CityEngine
 
 This repository contains a CityEngine CGA rule file (`vonthunen.cga`) that implements a simple model based on Johann Heinrich von Thünen's theory of agricultural land use. This model calculates and visualizes agricultural rent zones based on yield, market price, production cost, and transportation cost.
@@ -14,7 +13,7 @@ The Von Thunen model explains how agricultural land use is determined by a serie
 This section defines the main attributes and constants for the model. The attributes include yield (`Y1`, `Y2`, `Y3`), market prices (`PriceMarket1`, `PriceMarket2`, `PriceMarket3`), and transportation costs (`TransportCost1`, `TransportCost2`, `TransportCost3`). The production cost (`C`) is a constant.
 
 ```cga
-version "2010.3"
+
 
 # Set variables and constants
 attr Y1 = 300 // Yield (t/sqkm)
@@ -43,7 +42,7 @@ attr _ShowRent = false
 
 ### 2. Calculating Distance to Center
 
-This section calculates the distance from the center of the market to each block using the Pythagorean theorem.
+- This calculates the Euclidean distance (`distanceToCenter`) from the origin (`initialShape.origin`) to the center of each block in the CityEngine scene. It uses the Pythagorean theorem (`sqrt((px^2) + (pz^2))`) to compute the distance.
 
 ```cga
 # Calculates distance from the center
@@ -53,6 +52,15 @@ distanceToCenter = sqrt((initialShape.origin.px)*(initialShape.origin.px)+(initi
 ### 3. Creating Rent Zones
 
 The rent for each zone is calculated based on the Von Thunen model equation, taking into account yield, market price, production cost, and transportation cost.
+**Rent Zones Calculation**:
+  - `L1`, `L2`, `L3`: These constants calculate the profitability or rent for each crop zone based on the Von Thunen model equation:
+    - \( L = Y \times (P - C) - Y \times \left( \frac{d}{1000} \right) \times T \)
+    - Where:
+      - \( Y \) is the yield of the crop.
+      - \( P \) is the market price of the crop.
+      - \( C \) is the production cost of the crop.
+      - \( d \) is the distance to the center (converted to kilometers).
+      - \( T \) is the transportation cost of the crop.
 
 ```cga
 # Creates rent zones
@@ -65,16 +73,45 @@ const L3 = Y3 * (PriceMarket3 - C) - Y3 * (distanceToCenter / 1000) * TransportC
 
 This section defines how to generate the 3D geometries for the lots and parcels based on the rent values. It uses conditional statements to extrude the parcels differently depending on whether `_ShowRent` is true or false.
 
+- **Procedural Generation of Geometries**:
+  - `shapeType`: This attribute defines the type of shape to generate. By default, it's set to generate `Lot` shapes.
+
 ```cga
 # Generates 3D geometries
 attr shapeType = "Lot"
+```
+  
+- **Shape Generation Rules**:
+  - The script uses procedural generation rules (`Lot -->`) to define how shapes (`Parcel`) are generated based on the value of `shapeType`.
+  - If `shapeType` is not `"Lot"`, it colors the shapes in grey (`color("#8C8C8C")`).
+
+
+```cga
 
 Lot -->
 case shapeType == "Lot":
     Parcel
 else:
     color("#8C8C8C")
+```
 
+**Explanation:**
+
+- **Parcel Shape Generation**:
+  - `Parcel -->` defines rules for generating individual parcels or lots within the CityEngine scene.
+  
+- **Conditional Extrusion**:
+  - Depending on `_ShowRent`:
+    - If `_ShowRent` is `false`, parcels are extruded with random heights (`rand(min, max)`) based on the profitability zones (`L1`, `L2`, `L3`).
+    - If `_ShowRent` is `true`, parcels are extruded directly with heights based on the calculated rent values (`L1`, `L2`, `L3`).
+  
+- **Coloring**:
+  - Parcels are colored differently based on their profitability zones:
+    - Blue (`#4D87B3`), Red (`#C64F39`), Yellow (`#CFB549`) for different zones.
+    - Grey (`#D3D3D3`) for areas not meeting profitability criteria.
+
+
+```cga
 Parcel -->
 case _ShowRent == false:
     # Extrudes lots based on Von Thunen zones
