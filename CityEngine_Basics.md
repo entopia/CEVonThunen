@@ -9,8 +9,45 @@ An important strategy in writing CGA rules is to develop them progressively, inc
 This tutorial will take you through the step-by-step process of creating 3D buildings from a basic footprint by progressively developing a CGA rule.
 
 
-## Create a new scene
+## Creating a New Scene
 
+1. **Create a New Scene**:
+   - Open the Navigator and locate the `scenes` folder.
+   - Right-click on the `scenes` folder and select `New Scene`.
+   - Name your scene appropriately, such as `MyFirstModel.cej`.
+
+## Drawing and Adjusting Road Segments
+
+2. **Draw the Road Segment**:
+   - Click on the `Street Creation Tool` icon in the top menu.
+   - Click on the starting point in the viewport where you want the road segment to begin.
+   - Move the cursor to the endpoint of the road segment and click again to finalize the road segment.
+
+3. **Adjust Road Properties**:
+   - With the road segment selected, open the Inspector window.
+   - Adjust properties such as width, type, and alignment to customize the road segment as needed.
+
+![image](https://github.com/entopia/CEVonThunen/assets/4749503/0a7670f1-a7d7-4cb2-a3bb-8a3d4fd3a3de)
+
+
+
+
+## Growing Streets
+
+4. **Select the Grow Streets Tool**:
+   - With your street segment selected, in the toolbar, click on the `Grow Streets` icon or navigate to `Tools > Street Creation > Grow Streets`.
+
+5. **Configure Street Growth**:
+   - In the Grow Streets tool, configure parameters for your hypothetical city.
+   - Set the `Number of streets` to 1000.
+   - Choose `Pattern of Streets`: Radial.
+
+6. **Generate and Refine Streets**:
+   - The tool will automatically generate a network of streets based on the parameters you set.
+   - After generation, manually adjust and refine the street network by selecting and editing individual segments.
+
+7. **Save Your Project**:
+   - After making necessary adjustments, save your project to preserve the street network and scene setup.
 
 
 
