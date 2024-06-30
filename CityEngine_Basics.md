@@ -7,7 +7,8 @@ An important strategy in writing CGA rules is to develop them progressively, inc
 This tutorial will take you through the step-by-step process of creating 3D buildings from a basic footprint by progressively developing a CGA rule.
 
 
-## Open the scene
+## Create a new scene
+
 
 
 
