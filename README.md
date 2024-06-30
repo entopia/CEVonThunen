@@ -26,6 +26,25 @@ In this equation, the rent \( R(x) \) reflects the difference between the revenu
 This formulation encapsulates how the von Thunen model provides insights into spatial patterns of agricultural land use based on economic principles of land rent, transportation costs, and market proximity.
 
 
+## Creating Your First CGA Rule
+
+1. **Create a New Rule File**:
+   - Right-click the `\rules\` folder.
+   - Navigate to `New > CGA Rule File`.
+   - Name the rule file `MyFirstModel.cga`.
+
+2. **Add Initial Code**:
+   - Open the `MyFirstModel.cga` file.
+   - Below the line of code that states the version, add the following lines:
+
+   ```cga
+   version "2024.0"
+
+   // Hello World Example
+   @StartRule
+   Lot --> extrude(10)
+
+
 ## Code Breakdown
 
 ### 1. Setting Up Variables and Constants
