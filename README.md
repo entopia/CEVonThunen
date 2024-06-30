@@ -9,7 +9,21 @@ This repository contains a CityEngine CGA rule file (`vonthunen.cga`) that imple
 
 ## Von Thunen Model
 
-The Von Thunen model explains how agricultural land use is determined by a series of concentric rings around a central market, with different crops occupying different rings based on their transportation costs and market prices.
+The von Thunen model is one of the first bid-rent models that illustrates how agricultural land use patterns are organized around a central market. It posits that different types of agricultural activities are located in concentric rings or zones around a city or market center. The model assumes that land use decisions are primarily influenced by transportation costs and market prices. Agricultural activities that are perishable or have high transportation costs are located closer to the market to minimize transport expenses and ensure freshness, while less perishable or lower-value crops are situated further away where land costs are lower.
+
+Mathematically, the model can be represented by the bid rent function:
+
+\[ R(x) = P_c \cdot Y(x) - C(x) \]
+
+where:
+- \( R(x) \) is the rent paid for land at distance \( x \) from the market,
+- \( P_c \) is the price of the agricultural product,
+- \( Y(x) \) is the yield per unit of land at distance \( x \),
+- \( C(x) \) is the transport cost per unit of distance \( x \).
+
+In this equation, the rent \( R(x) \) reflects the difference between the revenue generated from agricultural production (\( P_c \cdot Y(x) \)) and the transportation costs (\( C(x) \)) incurred to bring the products to market. This bid rent function helps to determine the optimal location of agricultural activities relative to the market center in the von Thunen model.
+
+This formulation encapsulates how the von Thunen model provides insights into spatial patterns of agricultural land use based on economic principles of land rent, transportation costs, and market proximity.
 
 ## Code Breakdown
 
