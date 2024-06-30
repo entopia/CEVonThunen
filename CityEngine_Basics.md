@@ -31,7 +31,6 @@ This tutorial will take you through the step-by-step process of creating 3D buil
 
 
 
-
 ## Growing Streets
 
 4. **Select the Grow Streets Tool**:
@@ -41,6 +40,8 @@ This tutorial will take you through the step-by-step process of creating 3D buil
    - In the Grow Streets tool, configure parameters for your hypothetical city.
    - Set the `Number of streets` to 1000.
    - Choose `Pattern of Streets`: Radial.
+  
+![image](https://github.com/entopia/CEVonThunen/assets/4749503/3b94a079-cec0-4531-b321-1f2eb331547f)
 
 6. **Generate and Refine Streets**:
    - The tool will automatically generate a network of streets based on the parameters you set.
