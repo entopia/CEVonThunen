@@ -28,5 +28,5 @@ This tutorial will take you through the step-by-step process of creating 3D buil
 
    // Hello World Example
    @StartRule
-   Lot --> report("Hello, World!")
+   Lot --> extrude(10)
 
