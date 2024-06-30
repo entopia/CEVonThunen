@@ -17,7 +17,7 @@ This tutorial will take you through the step-by-step process of creating 3D buil
 1. **Create a New Rule File**:
    - Right-click the `\rules\` folder.
    - Navigate to `New > CGA Rule File`.
-   - Name the rule file `DetailedBuilding.cga`.
+   - Name the rule file `MyFirstModel.cga`.
 
 2. **Add Initial Code**:
    - Open the `DetailedBuilding.cga` file.
