@@ -20,7 +20,7 @@ This tutorial will take you through the step-by-step process of creating 3D buil
    - Name the rule file `MyFirstModel.cga`.
 
 2. **Add Initial Code**:
-   - Open the `DetailedBuilding.cga` file.
+   - Open the `MyFirstModel.cga` file.
    - Below the line of code that states the version, add the following lines:
 
    ```cga
@@ -28,5 +28,5 @@ This tutorial will take you through the step-by-step process of creating 3D buil
 
    // Hello World Example
    @StartRule
-   Lot --> report("Hello, World!") extrude(10)
+   Lot --> report("Hello, World!")
 
