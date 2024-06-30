@@ -25,6 +25,7 @@ In this equation, the rent \( R(x) \) reflects the difference between the revenu
 
 This formulation encapsulates how the von Thunen model provides insights into spatial patterns of agricultural land use based on economic principles of land rent, transportation costs, and market proximity.
 
+
 ## Code Breakdown
 
 ### 1. Setting Up Variables and Constants
