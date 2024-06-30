@@ -13,7 +13,7 @@ The von Thunen model is one of the first bid-rent models that illustrates how ag
 
 Mathematically, the model can be represented by the bid rent function:
 
-\[ R(x) = P_c \cdot Y(x) - C(x) \]
+R(x) = P_c \cdot Y(x) - C(x)
 
 where:
 - \( R(x) \) is the rent paid for land at distance \( x \) from the market,
