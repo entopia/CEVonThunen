@@ -31,7 +31,7 @@ This tutorial will take you through the step-by-step process of creating 3D buil
 
 
 
-## Growing Streets
+## Create a Hypothetical Radial City
 
 4. **Select the Grow Streets Tool**:
    - With your street segment selected, in the toolbar, click on the `Grow Streets` icon or navigate to `Tools > Street Creation > Grow Streets`.
