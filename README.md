@@ -68,7 +68,7 @@ This formulation encapsulates how the von Thunen model provides insights into sp
 
 ### 1. Setting Up Variables and Constants
 
-This section defines the main attributes and constants for the model. The attributes include yield (`Y1`, `Y2`, `Y3`), market prices (`PriceMarket1`, `PriceMarket2`, `PriceMarket3`), and transportation costs (`TransportCost1`, `TransportCost2`, `TransportCost3`). The production cost (`C`) is a constant.
+This section defines the main attributes and constants for the model. Lets imagine we have 3 Agricultural zones, e.g. Dairy, Corn and Wood. The attributes include yield (`Y1`, `Y2`, `Y3`), market prices (`PriceMarket1`, `PriceMarket2`, `PriceMarket3`), and transportation costs (`TransportCost1`, `TransportCost2`, `TransportCost3`). The production cost (`C`) is a constant.
 
 ```cga
 
