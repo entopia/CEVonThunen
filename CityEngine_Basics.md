@@ -54,7 +54,8 @@ This tutorial will take you through the step-by-step process of creating 3D buil
 
 
 
-## Creating Your First CGA Rule
+
+## Creating Your First CGA Rule by extruding heights
 
 1. **Create a New Rule File**:
    - Right-click the `\rules\` folder.
