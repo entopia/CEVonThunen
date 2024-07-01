@@ -26,44 +26,6 @@ In this equation, the rent \( R(x) \) reflects the difference between the revenu
 This formulation encapsulates how the von Thunen model provides insights into spatial patterns of agricultural land use based on economic principles of land rent, transportation costs, and market proximity.
 
 
-## Creating Your First CGA Rule
-
-1. **Create a New Rule File**:
-   - Right-click the `\rules\` folder.
-   - Navigate to `New > CGA Rule File`.
-   - Name the rule file `MyFirstRule.cga`.
-
-2. **Add Initial Code**:
-   - Open the `MyFirstRule.cga` file.
-   - Below the line of code that states the version, add the following lines:
-
-   ```cga
-   version "2024.0"
-
-   // Hello World Example
-   @StartRule
-   Lot --> extrude(10)
-   ```
-3. **Assign the Rule to the Lot Shapes**
-   
-   **Select Lots:**
-   
-   In the viewport or the Scene Editor, select the lot(s) to which you want to assign the rules.
-   (A common way to do this is from the Layers panel, to expand the current layer, and you ll notice that there are two sub-layers, 'streets' and 'Lots'. Right click on the Lots --> select all.)
-
-   **Assign the Rule to the Selected Lots:**
-   
-   In the Navigator, locate your CGA rule file (e.g., MyFirstRule.cga).
- 
-   With the lots selected, go to the Inspector window.
-   In the Inspector window, find the section labeled 'Rule' File.
-   Click on the folder icon next to the Rule File field to browse and select your CGA rule file.
-   After selecting the rule file, the Start Rule field will be populated automatically, or you may need to select the appropriate start rule from the dropdown.
-   
-   **Generate Models:**
-   Click the Generate button (usually a green play icon) in the toolbar to apply the rules and generate the 3D models on the selected lots.
-
-
 ## Code Breakdown
 
 ### 1. Setting Up Variables and Constants
