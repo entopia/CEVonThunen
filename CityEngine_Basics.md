@@ -31,7 +31,7 @@ This tutorial will take you through the step-by-step process of creating 3D buil
 
 
 
-## Create a Hypothetical Radial City
+## Generate a Hypothetical Radial City Layout
 
 4. **Select the Grow Streets Tool**:
    - With your street segment selected, in the toolbar, click on the `Grow Streets` icon or navigate to `Tools > Street Creation > Grow Streets`.
@@ -46,6 +46,8 @@ This tutorial will take you through the step-by-step process of creating 3D buil
 6. **Generate and Refine Streets**:
    - The tool will automatically generate a network of streets based on the parameters you set.
    - After generation, manually adjust and refine the street network by selecting and editing individual segments.
+
+![image](https://github.com/entopia/CEVonThunen/assets/4749503/716cd4ca-e384-407d-9a4e-53f55073b1b4)
 
 7. **Save Your Project**:
    - After making necessary adjustments, save your project to preserve the street network and scene setup.
